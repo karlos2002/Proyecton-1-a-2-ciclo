@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Contacto</title>
+</head>
+<body>
+<header>
+    <div class="contenedor">
+        <h1 class="icon-dog">4 Patas</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+        <nav class="menu">
+            <a href="./index.html">Inicio</a>
+            <a href="./pets.html">Mascotas</a>
+            <a href="./contact.html">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="form">
+        <div class="form-style-6">
+            <h1>CONTÁCTANOS</h1>
+            <form id="formulario">
+                <input id="txtNombres" type="text" name="field1" placeholder="Tu Nombre"/>
+                <input id="txtEmail" type="text" name="field2" placeholder="Correo Electrónico"/>
+                <input id="txtTelefono" type="text" name="field3" placeholder="Celular"/>
+                <textarea name="field4" placeholder="Escribe Tu Mensaje" onkeydown="validarEntrada(event, this.value, 30)"></textarea>
+                <input type="button" value="ENVIAR" onClick="validarFormulario()"/>
+            </form>
+            <p id="validationLimit"></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="contenedor">
+        <p class="copy">4 Patas &copy; 2020</p>
+        <div class="sociales">
+            <a class="fontawesome-facebook-sign" target="_blank" href="#" onClick="enlaces(0)"></a>
+            <a class="fontawesome-twitter" target="_blank" href="#" onClick="enlaces(1)"></a>
+            <a class="fontawesome-camera-retro" target="_blank" href="#" onClick="enlaces(2)"></a>
+            <a class="fontawesome-google-plus-sign" target="_blank" href="#" onClick="enlaces(3)"></a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="js/contacto.js"></script>
+</html>
